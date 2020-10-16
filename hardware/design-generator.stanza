@@ -31,8 +31,7 @@ pcb-module glasgow:
   package(header[1]) at loc(17.78, 0.0, 0.0) on Bottom
 
   for i in 1 through 8 do :
-    net (gnd, A.gnd, B.gnd, 
-         header[0].p[2 * i + 1], header[1].p[2 * i + 2])
+    net (gnd, A.gnd, B.gnd, header[0].p[2 * i + 1], header[1].p[2 * i + 2])
     net PA[i] (A.io[i], header[0].p[2 * i + 2])
     net PB[i] (B.io[i], header[1].p[2 * i + 1])
 
@@ -42,23 +41,29 @@ pcb-module glasgow:
   net (A.vsense, header[1].p[2])
   net (B.vsense, header[0].p[2])
 
-; Main module. Code inside here get's converted to hardware.
+; Main module. Code inside here gets converted to hardware.
 pcb-module can-addon :
-  inst add-on : glasgow
-  package(add-on) at loc(0.0,0.0) on Top
+  inst glasgow : glasgow
+  package(glasgow) at loc(0.0,0.0) on Top
 
-  net (add-on.A.io, add-on.B.io)
+  net gnd (glasgow. gnd)
+
+  inst xr : {ocdb/texas-instruments/TCAN1051/module}
+  net (xr.gnd, gnd)
+  ocdb/terminations/terminate-can(xr.can, gnd, "switchable", glasgow.A.io[1])
+  
+  net (glasgow.A.io, glasgow.B.io)
 
 
 
 val main-design = default-board(can-addon, 2, 48.0, 40.0)
 view(main-design)
 
-; export-kicad("kicad", [`place => true 
-;                       `gen-board => true 
-;                       `gen-schematic => true 
-;                       `fresh => true 
-;                       `schematic-version => 4
-;                       `param-configs => [`sketch]] )
+export-kicad("can-add-on", [`place => true 
+                      `gen-board => true 
+                      `gen-schematic => true 
+                      `fresh => true 
+                      `schematic-version => 4
+                      `param-configs => [`sketch]] )
 
                         ; `gen-bom => true 

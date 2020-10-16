@@ -1,0 +1,3 @@
+[submodule "hardware/open-components-database"]
+	path = hardware/open-components-database
+	url = git@github.com:d-haldane/open-components-database.git
