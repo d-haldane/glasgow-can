@@ -1,0 +1,64 @@
+#use-added-syntax(esir)
+defpackage design-generator :
+  import core
+  import collections
+  import math
+  import esir
+  import esir/utils
+  import esir/gen
+  import esir/repl-lib
+  import jitpcb/visualizer
+  import ocdb/tests/default-harness
+  import ocdb/generator-utils
+  import ocdb/generic-components
+  import ocdb/bundles
+
+; Set up a new type of port for glasgow
+pcb-bundle glasgow-port:
+  pin vio
+  pin vsense
+  pin gnd
+  port io : pin[{1 through 8}]
+
+; Set up glasgow interface
+pcb-module glasgow:
+  port A : glasgow-port
+  port B : glasgow-port
+  pin gnd
+
+  inst header : {pin-header(20,2)}[2]
+  package(header[0]) at loc(-17.78, 0.0, 180.0) on Bottom
+  package(header[1]) at loc(17.78, 0.0, 0.0) on Bottom
+
+  for i in 1 through 8 do :
+    net (gnd, A.gnd, B.gnd, 
+         header[0].p[2 * i + 1], header[1].p[2 * i + 2])
+    net PA[i] (A.io[i], header[0].p[2 * i + 2])
+    net PB[i] (B.io[i], header[1].p[2 * i + 1])
+
+  net (A.vio, header[1].p[1])
+  net (B.vio, header[0].p[1])
+
+  net (A.vsense, header[1].p[2])
+  net (B.vsense, header[0].p[2])
+
+; Main module. Code inside here get's converted to hardware.
+pcb-module can-addon :
+  inst add-on : glasgow
+  package(add-on) at loc(0.0,0.0) on Top
+
+  net (add-on.A.io, add-on.B.io)
+
+
+
+val main-design = default-board(can-addon, 2, 48.0, 40.0)
+view(main-design)
+
+; export-kicad("kicad", [`place => true 
+;                       `gen-board => true 
+;                       `gen-schematic => true 
+;                       `fresh => true 
+;                       `schematic-version => 4
+;                       `param-configs => [`sketch]] )
+
+                        ; `gen-bom => true 
