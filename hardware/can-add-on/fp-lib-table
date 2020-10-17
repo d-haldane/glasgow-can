@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name can-add-on)(type KiCad)(uri "$(KIPRJMOD)/can-add-on.pretty")(options "")(descr ""))
+)
