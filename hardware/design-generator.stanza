@@ -41,19 +41,54 @@ pcb-module glasgow:
   net (A.vsense, header[1].p[2])
   net (B.vsense, header[0].p[2])
 
+pcb-module can-db9 :
+  pin vcc
+  pin gnd
+  pin termination-ctrl
+  pin s
+  port uart : uart
+  inst xr : {ocdb/texas-instruments/TCAN1051/module}
+  inst j : {ocdb/amphenol/delta-d/component(9, "female", "right-angle")}
+
+  net (xr.gnd, j.p[2] j.shield, gnd)
+  ocdb/terminations/terminate-can(xr.can, gnd, "switchable", termination-ctrl)
+  ocdb/protection/esd-clamp(xr.can, gnd)
+
+  net (vcc, xr.vcc, xr.vio)
+  net (uart.tx, xr.uart.tx)
+  net (xr.s s)
+  net (uart.rx, xr.uart.rx)
+  net (xr.can.canh j.p[3])
+  net (xr.can.canl j.p[5])
+
+
 ; Main module. Code inside here gets converted to hardware.
 pcb-module can-addon :
   inst glasgow : glasgow
+  inst can-a : can-db9
+  inst can-b : can-db9
+
+  net (can-a.uart.tx, glasgow.A.io[1])
+  net (can-a.uart.rx, glasgow.A.io[2])
+  net (can-a.termination-ctrl,    glasgow.A.io[3])
+  net (can-a.s,    glasgow.A.io[4])
+  net (can-a.vcc,     glasgow.A.vio)
+
+  net (can-b.uart.tx, glasgow.B.io[1])
+  net (can-b.uart.rx, glasgow.B.io[2])
+  net (can-b.termination-ctrl,    glasgow.B.io[3])
+  net (can-b.s,    glasgow.B.io[4])
+  net (can-b.vcc,     glasgow.B.vio)
+
+  net gnd (glasgow.gnd, can-a.gnd, can-b.gnd)
+
+ 
+
   package(glasgow) at loc(0.0,0.0) on Top
-
-  net gnd (glasgow. gnd)
-
-  inst xr : {ocdb/texas-instruments/TCAN1051/module}
-  net (xr.gnd, gnd)
-  ocdb/terminations/terminate-can(xr.can, gnd, "switchable", glasgow.A.io[1])
-  
-  net (glasgow.A.io, glasgow.B.io)
-
+  layout-group(can-a) = A
+  schematic-group(can-a) = A
+  layout-group(can-b) = B
+  schematic-group(can-b) = B
 
 
 val main-design = default-board(can-addon, 2, 48.0, 40.0)
