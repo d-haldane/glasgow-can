@@ -1,0 +1,56 @@
+#use-added-syntax(esir)
+defpackage glasgow :
+  import core
+  import collections
+  import math
+  import esir
+  import esir/utils
+  import esir/gen
+  import esir/repl-lib
+  import jitpcb/visualizer
+  import ocdb/tests/default-harness
+  import ocdb/generator-utils
+  import ocdb/generic-components
+  import ocdb/bundles
+
+; Set up a new type of port for glasgow
+public pcb-bundle glasgow-io:
+  pin vio
+  pin vsense
+  pin gnd
+  port io : pin[{1 through 8}]
+
+; Set up glasgow interface, based on planned vio levels for io banks a and b
+public pcb-module add-on (vio-a:Double, vio-b:Double):
+  port A : glasgow-io
+  port B : glasgow-io
+  pin gnd
+
+  inst header : {pin-header(20,2)}[2]
+  package(header[0]) at loc(-17.78, 0.0, 180.0) on Bottom
+  package(header[1]) at loc(17.78, 0.0, 0.0) on Bottom
+
+  for i in 1 through 8 do :
+    net (gnd, A.gnd, B.gnd, header[0].p[2 * i + 1], header[1].p[2 * i + 2])
+    net PA[i] (A.io[i], header[0].p[2 * i + 2])
+    net PB[i] (B.io[i], header[1].p[2 * i + 1])
+    ; Set up capabilities for automated pin assignment
+    supports {banked-io("A")}:
+      gpio => header[0].p[2 * i + 2]
+    supports {banked-io("B")}:
+      gpio => header[1].p[2 * i + 1]
+    ; Apply digital io parameters to the io pins based on vio. Based on the SN74LVC1T45.
+    properties(A.io[i]):
+      apply-digital-io-params(0.3 * vio-a, 0.7 * vio-a, 0.0, vio-a)
+    properties(B.io[i]):
+      apply-digital-io-params(0.3 * vio-b, 0.7 * vio-b, 0.0, vio-b)
+
+  net (A.vio, header[1].p[1])
+  properties(A.vio):
+    apply-power-supply-pin-params(vio-a, 0.15)
+  net (B.vio, header[0].p[1])
+  properties(B.vio):
+    apply-power-supply-pin-params(vio-a, 0.15)
+
+  net (A.vsense, header[1].p[2])
+  net (B.vsense, header[0].p[2])

@@ -12,82 +12,47 @@ defpackage design-generator :
   import ocdb/generator-utils
   import ocdb/generic-components
   import ocdb/bundles
-
-; Set up a new type of port for glasgow
-pcb-bundle glasgow-port:
-  pin vio
-  pin vsense
-  pin gnd
-  port io : pin[{1 through 8}]
-
-; Set up glasgow interface
-pcb-module glasgow:
-  port A : glasgow-port
-  port B : glasgow-port
-  pin gnd
-
-  inst header : {pin-header(20,2)}[2]
-  package(header[0]) at loc(-17.78, 0.0, 180.0) on Bottom
-  package(header[1]) at loc(17.78, 0.0, 0.0) on Bottom
-
-  for i in 1 through 8 do :
-    net (gnd, A.gnd, B.gnd, header[0].p[2 * i + 1], header[1].p[2 * i + 2])
-    net PA[i] (A.io[i], header[0].p[2 * i + 2])
-    net PB[i] (B.io[i], header[1].p[2 * i + 1])
-
-  net (A.vio, header[1].p[1])
-  net (B.vio, header[0].p[1])
-
-  net (A.vsense, header[1].p[2])
-  net (B.vsense, header[0].p[2])
-
-pcb-module can-db9 :
-  pin vcc
-  pin gnd
-  pin termination-ctrl
-  pin s
-  port uart : uart
-  inst xr : {ocdb/texas-instruments/TCAN1051/module}
-  inst j : {ocdb/amphenol/delta-d/component(9, "female", "right-angle")}
-
-  net (xr.gnd, j.p[2] j.shield, gnd)
-  ocdb/terminations/terminate-can(xr.can, gnd, "switchable", termination-ctrl)
-  ocdb/protection/esd-clamp(xr.can, gnd)
-
-  net (vcc, xr.vcc, xr.vio)
-  net (uart.tx, xr.uart.tx)
-  net (xr.s s)
-  net (uart.rx, xr.uart.rx)
-  net (xr.can.canh j.p[3])
-  net (xr.can.canl j.p[5])
-
+  import glasgow
 
 ; Main module. Code inside here gets converted to hardware.
 pcb-module can-addon :
-  inst glasgow : glasgow
-  inst can-a : can-db9
-  inst can-b : can-db9
+  ; Plan for vio-a = vio-b = 5.0
+  inst glasgow : {glasgow/add-on(5.0, 5.0)}
+  net gnd (glasgow.gnd)
 
-  net (can-a.uart.tx, glasgow.A.io[1])
-  net (can-a.uart.rx, glasgow.A.io[2])
-  net (can-a.termination-ctrl,    glasgow.A.io[3])
-  net (can-a.s,    glasgow.A.io[4])
-  net (can-a.vcc,     glasgow.A.vio)
+  inst xr-a : {ocdb/texas-instruments/TCAN1051/module}
+  inst j-a : {ocdb/amphenol/delta-d/component(9, "female", "right-angle")}
+  net (xr-a.gnd, j-a.p[2] j-a.shield, gnd)
+  net (xr-a.can.canh j-a.p[3])
+  net (xr-a.can.canl j-a.p[5])
+  require can-a:{banked-io("A")}[4] from glasgow
+  net (xr-a.uart.tx, can-a[0].gpio)
+  net (xr-a.uart.rx, can-a[1].gpio)
+  net (xr-a.s,       can-a[2].gpio)
+  net (xr-a.vcc, xr-a.vio,  glasgow.A.vio)
+  ocdb/protection/esd-clamp(xr-a.can, gnd)
+  ocdb/terminations/terminate-can(xr-a.can, gnd, "isolated-switchable", can-a[3].gpio)
 
-  net (can-b.uart.tx, glasgow.B.io[1])
-  net (can-b.uart.rx, glasgow.B.io[2])
-  net (can-b.termination-ctrl,    glasgow.B.io[3])
-  net (can-b.s,    glasgow.B.io[4])
-  net (can-b.vcc,     glasgow.B.vio)
-
-  net gnd (glasgow.gnd, can-a.gnd, can-b.gnd)
+  inst xr-b : {ocdb/texas-instruments/TCAN1051/module}
+  inst j-b : {ocdb/amphenol/delta-d/component(9, "female", "right-angle")}
+  net (xr-b.gnd, j-b.p[2] j-b.shield, gnd)
+  require can-b:{banked-io("B")}[4] from glasgow
+  net (xr-b.can.canh j-b.p[3])
+  net (xr-b.can.canl j-b.p[5])
+  net (xr-b.uart.tx, can-b[0].gpio)
+  net (xr-b.uart.rx, can-b[1].gpio)
+  net (xr-b.s,       can-b[2].gpio)
+  net (xr-b.vcc, xr-b.vio,  glasgow.B.vio)
+  ocdb/protection/esd-clamp(xr-b.can, gnd)
+  ocdb/terminations/terminate-can(xr-b.can, gnd, "isolated-switchable", can-b[3].gpio)
 
   package(glasgow) at loc(0.0,0.0) on Top
-  layout-group(can-a) = A
-  schematic-group(can-a) = A
-  layout-group(can-b) = B
-  schematic-group(can-b) = B
+  layout-group(xr-a) = A
+  schematic-group(xr-a) = A
+  layout-group(xr-b) = B
+  schematic-group(xr-b) = B
 
+print-esir("Input.txt")
 
 val main-design = default-board(can-addon, 2, 48.0, 40.0)
 view(main-design)
