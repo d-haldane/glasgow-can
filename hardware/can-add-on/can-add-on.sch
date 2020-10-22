@@ -16,837 +16,974 @@ $EndDescr
 $Comp
 L project_symbols:pin-header$18 J1
 U 1 1 00000000
-P 4900 32600
-F 0 "J1" H 4650 33204 30 0 L BNN
-F 2 "can-add-on:pin-header-pkg$19" H 4900 32600 60 1 C CNN
-F 1 "20X2-pin-header" H 4650 33162 30 0 L BNN
-  1 4900 32600
+P 1750 27750
+F 0 "J1" H 1500 28354 30 0 L BNN
+F 2 "can-add-on:pin-header-pkg$19" H 1750 27750 60 1 C CNN
+F 1 "20X2-pin-header" H 1500 28312 30 0 L BNN
+  1 1750 27750
   1 0 0 -1
 $EndComp
 $Comp
 L project_symbols:pin-header$18 J2
 U 1 1 00000000
-P 2600 30650
-F 0 "J2" H 2350 31254 30 0 L BNN
-F 2 "can-add-on:pin-header-pkg$19" H 2600 30650 60 1 C CNN
-F 1 "20X2-pin-header" H 2350 31212 30 0 L BNN
-  1 2600 30650
+P 1750 29900
+F 0 "J2" H 1500 30504 30 0 L BNN
+F 2 "can-add-on:pin-header-pkg$19" H 1750 29900 60 1 C CNN
+F 1 "20X2-pin-header" H 1500 30462 30 0 L BNN
+  1 1750 29900
   1 0 0 -1
 $EndComp
 $Comp
 L project_symbols:component$7 U1
 U 1 1 00000000
-P 7950 32500
-F 0 "U1" H 7700 32954 30 0 L BNN
-F 2 "can-add-on:soic127p-package$25" H 7950 32500 60 1 C CNN
-F 1 "TCAN1051GVDRQ1" H 7700 32912 30 0 L BNN
-  1 7950 32500
-  1 0 0 -1
+P 1500 26000
+F 0 "U1" H 1250 26454 30 0 L BNN
+F 2 "can-add-on:soic127p-package$25" H 1500 26000 60 1 C CNN
+F 1 "TCAN1051GVDRQ1" H 1250 26412 30 0 L BNN
+  1 1500 26000
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:gen-cap-cmp$28 C1
 U 1 1 00000000
-P 7750 31300
-F 0 "C1" H 7850 31350 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 7750 31300 60 1 C CNN
-F 1 "4.7μF" H 7850 31250 28 0 L CNN
-F 4 "4.7μF" H 7750 31300 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 7750 31300 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 7750 31300 60 1 C CNN "Maximum Voltage"
-  1 7750 31300
-  1 0 0 -1
+P 1200 24550
+F 0 "C1" H 1300 24600 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 1200 24550 60 1 C CNN
+F 1 "4.7μF" H 1300 24500 28 0 L CNN
+F 4 "4.7μF" H 1200 24550 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 1200 24550 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 1200 24550 60 1 C CNN "Maximum Voltage"
+  1 1200 24550
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:gen-cap-cmp$33 C2
 U 1 1 00000000
-P 7300 31300
-F 0 "C2" H 7400 31350 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 7300 31300 60 1 C CNN
-F 1 "100.0nF" H 7400 31250 28 0 L CNN
-F 4 "100.0nF" H 7300 31300 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 7300 31300 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 7300 31300 60 1 C CNN "Maximum Voltage"
-  1 7300 31300
-  1 0 0 -1
+P 1650 24550
+F 0 "C2" H 1750 24600 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 1650 24550 60 1 C CNN
+F 1 "100.0nF" H 1750 24500 28 0 L CNN
+F 4 "100.0nF" H 1650 24550 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 1650 24550 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 1650 24550 60 1 C CNN "Maximum Voltage"
+  1 1650 24550
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:gen-cap-cmp$28 C3
 U 1 1 00000000
-P 8200 31300
-F 0 "C3" H 8300 31350 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 8200 31300 60 1 C CNN
-F 1 "4.7μF" H 8300 31250 28 0 L CNN
-F 4 "4.7μF" H 8200 31300 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 8200 31300 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 8200 31300 60 1 C CNN "Maximum Voltage"
-  1 8200 31300
-  1 0 0 -1
+P 2550 24550
+F 0 "C3" H 2650 24600 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 2550 24550 60 1 C CNN
+F 1 "4.7μF" H 2650 24500 28 0 L CNN
+F 4 "4.7μF" H 2550 24550 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 2550 24550 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 2550 24550 60 1 C CNN "Maximum Voltage"
+  1 2550 24550
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:gen-cap-cmp$33 C4
 U 1 1 00000000
-P 8650 31300
-F 0 "C4" H 8750 31350 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 8650 31300 60 1 C CNN
-F 1 "100.0nF" H 8750 31250 28 0 L CNN
-F 4 "100.0nF" H 8650 31300 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 8650 31300 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 8650 31300 60 1 C CNN "Maximum Voltage"
-  1 8650 31300
-  1 0 0 -1
+P 2100 24550
+F 0 "C4" H 2200 24600 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 2100 24550 60 1 C CNN
+F 1 "100.0nF" H 2200 24500 28 0 L CNN
+F 4 "100.0nF" H 2100 24550 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 2100 24550 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 2100 24550 60 1 C CNN "Maximum Voltage"
+  1 2100 24550
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:component$36 J3
 U 1 1 00000000
-P 4850 29500
-F 0 "J3" H 4650 30104 30 0 L BNN
-F 2 "can-add-on:amphenol-delta-d-pkg$38" H 4850 29500 60 1 C CNN
-F 1 "D09S33E4GV00LF" H 4650 30062 30 0 L BNN
-  1 4850 29500
+P 4400 32550
+F 0 "J3" H 4200 33154 30 0 L BNN
+F 2 "can-add-on:amphenol-delta-d-pkg$38" H 4400 32550 60 1 C CNN
+F 1 "D09S33E4GV00LF" H 4200 33112 30 0 L BNN
+  1 4400 32550
   1 0 0 -1
 $EndComp
 $Comp
 L project_symbols:component$11 D1
 U 1 1 00000000
-P 5350 29700
-F 0 "D1" H 5100 29904 30 0 L BNN
-F 2 "can-add-on:SC-70-3" H 5350 29700 60 1 C CNN
-F 1 "PESD1CAN-U" H 5100 29862 30 0 L BNN
-  1 5350 29700
+P 4600 31200
+F 0 "D1" H 4350 31404 30 0 L BNN
+F 2 "can-add-on:SC-70-3" H 4600 31200 60 1 C CNN
+F 1 "PESD1CAN-U" H 4350 31362 30 0 L BNN
+  1 4600 31200
   0 -1 -1 0
 $EndComp
 $Comp
-L project_symbols:component$9 U2
+L project_symbols:component$10 Q1
 U 1 1 00000000
-P 6050 32650
-F 0 "U2" H 6050 32650 60 1 C CNN
-F 2 "can-add-on:tlp-175" H 6050 32650 60 1 C CNN
-F 1 "TLP175A(TPL,E" H 6050 32650 60 1 C CNN
-  1 6050 32650
-  1 0 0 -1
+P 3500 31600
+F 0 "Q1" H 3600 31650 28 0 L CNN
+F 2 "can-add-on:SOT95P280X100-3N" H 3500 31600 60 1 C CNN
+F 1 "FDN352AP" H 3600 31550 28 0 L CNN
+  1 3500 31600
+  0 -1 -1 0
+$EndComp
+$Comp
+L project_symbols:component$10 Q2
+U 1 1 00000000
+P 2350 31600
+F 0 "Q2" H 2450 31650 28 0 L CNN
+F 2 "can-add-on:SOT95P280X100-3N" H 2350 31600 60 1 C CNN
+F 1 "FDN352AP" H 2450 31550 28 0 L CNN
+  1 2350 31600
+  0 1 1 0
 $EndComp
 $Comp
 L project_symbols:gen-res-cmp$47 R1
 U 1 1 00000000
-P 5450 32550
-F 0 "R1" H 5550 32600 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 5450 32550 60 1 C CNN
-F 1 "750.0Ω" H 5550 32500 28 0 L CNN
-F 4 "750.0Ω" H 5450 32550 60 1 C CNN "Resistance"
-F 5 "0.02%" H 5450 32550 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNW" H 5450 32550 60 1 C CNN "Maximum Power"
-  1 5450 32550
+P 3850 31600
+F 0 "R1" H 3950 31650 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 3850 31600 60 1 C CNN
+F 1 "56.0Ω" H 3950 31550 28 0 L CNN
+F 4 "56.0Ω" H 3850 31600 60 1 C CNN "Resistance"
+F 5 "0.02%" H 3850 31600 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNW" H 3850 31600 60 1 C CNN "Maximum Power"
+  1 3850 31600
+  0 -1 -1 0
+$EndComp
+$Comp
+L project_symbols:gen-res-cmp$47 R2
+U 1 1 00000000
+P 2000 31600
+F 0 "R2" H 2100 31650 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 2000 31600 60 1 C CNN
+F 1 "56.0Ω" H 2100 31550 28 0 L CNN
+F 4 "56.0Ω" H 2000 31600 60 1 C CNN "Resistance"
+F 5 "0.02%" H 2000 31600 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNW" H 2000 31600 60 1 C CNN "Maximum Power"
+  1 2000 31600
   0 1 1 0
 $EndComp
 $Comp
-L project_symbols:gen-res-cmp$50 R2
+L project_symbols:gen-cap-cmp$51 C9
 U 1 1 00000000
-P 5600 29950
-F 0 "R2" H 5700 30000 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 5600 29950 60 1 C CNN
-F 1 "100.0Ω" H 5700 29900 28 0 L CNN
-F 4 "100.0Ω" H 5600 29950 60 1 C CNN "Resistance"
-F 5 "0.02%" H 5600 29950 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNW" H 5600 29950 60 1 C CNN "Maximum Power"
-  1 5600 29950
+P 1650 31600
+F 0 "C9" H 1750 31650 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 1650 31600 60 1 C CNN
+F 1 "4.7pF" H 1750 31550 28 0 L CNN
+F 4 "4.7pF" H 1650 31600 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 1650 31600 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 1650 31600 60 1 C CNN "Maximum Voltage"
+  1 1650 31600
+  0 1 1 0
+$EndComp
+$Comp
+L project_symbols:gen-cap-cmp$51 C10
+U 1 1 00000000
+P 4950 31600
+F 0 "C10" H 5050 31650 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 4950 31600 60 1 C CNN
+F 1 "4.7pF" H 5050 31550 28 0 L CNN
+F 4 "4.7pF" H 4950 31600 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 4950 31600 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 4950 31600 60 1 C CNN "Maximum Voltage"
+  1 4950 31600
+  0 -1 -1 0
+$EndComp
+$Comp
+L project_symbols:gen-res-cmp$54 R3
+U 1 1 00000000
+P 2200 27500
+F 0 "R3" H 2300 27550 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 2200 27500 60 1 C CNN
+F 1 "1.0kΩ" H 2300 27450 28 0 L CNN
+F 4 "1.0kΩ" H 2200 27500 60 1 C CNN "Resistance"
+F 5 "0.02%" H 2200 27500 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNW" H 2200 27500 60 1 C CNN "Maximum Power"
+  1 2200 27500
   1 0 0 -1
+$EndComp
+$Comp
+L project_symbols:gen-res-cmp$56 R4
+U 1 1 00000000
+P 1400 32000
+F 0 "R4" H 1500 32050 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 1400 32000 60 1 C CNN
+F 1 "33.0kΩ" H 1500 31950 28 0 L CNN
+F 4 "33.0kΩ" H 1400 32000 60 1 C CNN "Resistance"
+F 5 "0.02%" H 1400 32000 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNW" H 1400 32000 60 1 C CNN "Maximum Power"
+  1 1400 32000
+  -1 0 0 1
+$EndComp
+$Comp
+L project_symbols:gen-cap-cmp$58 C12
+U 1 1 00000000
+P 2650 31950
+F 0 "C12" H 2750 32000 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 2650 31950 60 1 C CNN
+F 1 "4.7nF" H 2750 31900 28 0 L CNN
+F 4 "4.7nF" H 2650 31950 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 2650 31950 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 2650 31950 60 1 C CNN "Maximum Voltage"
+  1 2650 31950
+  1 0 0 -1
+$EndComp
+$Comp
+L project_symbols:gen-res-cmp$60 R5
+U 1 1 00000000
+P 3300 31950
+F 0 "R5" H 3400 32000 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 3300 31950 60 1 C CNN
+F 1 "100.0kΩ" H 3400 31900 28 0 L CNN
+F 4 "100.0kΩ" H 3300 31950 60 1 C CNN "Resistance"
+F 5 "0.02%" H 3300 31950 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNW" H 3300 31950 60 1 C CNN "Maximum Power"
+  1 3300 31950
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:component$7 U3
 U 1 1 00000000
-P 5500 31150
-F 0 "U3" H 5250 31604 30 0 L BNN
-F 2 "can-add-on:soic127p-package$25" H 5500 31150 60 1 C CNN
-F 1 "TCAN1051GVDRQ1" H 5250 31562 30 0 L BNN
-  1 5500 31150
-  1 0 0 -1
+P 8400 32600
+F 0 "U3" H 8150 33054 30 0 L BNN
+F 2 "can-add-on:soic127p-package$25" H 8400 32600 60 1 C CNN
+F 1 "TCAN1051GVDRQ1" H 8150 33012 30 0 L BNN
+  1 8400 32600
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:gen-cap-cmp$28 C5
 U 1 1 00000000
-P 1900 27650
-F 0 "C5" H 2000 27700 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 1900 27650 60 1 C CNN
-F 1 "4.7μF" H 2000 27600 28 0 L CNN
-F 4 "4.7μF" H 1900 27650 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 1900 27650 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 1900 27650 60 1 C CNN "Maximum Voltage"
-  1 1900 27650
-  1 0 0 -1
+P 7800 31150
+F 0 "C5" H 7900 31200 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 7800 31150 60 1 C CNN
+F 1 "4.7μF" H 7900 31100 28 0 L CNN
+F 4 "4.7μF" H 7800 31150 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 7800 31150 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 7800 31150 60 1 C CNN "Maximum Voltage"
+  1 7800 31150
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:gen-cap-cmp$33 C6
 U 1 1 00000000
-P 1000 27650
-F 0 "C6" H 1100 27700 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 1000 27650 60 1 C CNN
-F 1 "100.0nF" H 1100 27600 28 0 L CNN
-F 4 "100.0nF" H 1000 27650 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 1000 27650 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 1000 27650 60 1 C CNN "Maximum Voltage"
-  1 1000 27650
-  1 0 0 -1
+P 8250 31150
+F 0 "C6" H 8350 31200 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 8250 31150 60 1 C CNN
+F 1 "100.0nF" H 8350 31100 28 0 L CNN
+F 4 "100.0nF" H 8250 31150 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 8250 31150 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 8250 31150 60 1 C CNN "Maximum Voltage"
+  1 8250 31150
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:gen-cap-cmp$28 C7
 U 1 1 00000000
-P 1450 27650
-F 0 "C7" H 1550 27700 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 1450 27650 60 1 C CNN
-F 1 "4.7μF" H 1550 27600 28 0 L CNN
-F 4 "4.7μF" H 1450 27650 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 1450 27650 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 1450 27650 60 1 C CNN "Maximum Voltage"
-  1 1450 27650
-  1 0 0 -1
+P 9150 31150
+F 0 "C7" H 9250 31200 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 9150 31150 60 1 C CNN
+F 1 "4.7μF" H 9250 31100 28 0 L CNN
+F 4 "4.7μF" H 9150 31150 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 9150 31150 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 9150 31150 60 1 C CNN "Maximum Voltage"
+  1 9150 31150
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:gen-cap-cmp$33 C8
 U 1 1 00000000
-P 2350 27650
-F 0 "C8" H 2450 27700 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 2350 27650 60 1 C CNN
-F 1 "100.0nF" H 2450 27600 28 0 L CNN
-F 4 "100.0nF" H 2350 27650 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 2350 27650 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 2350 27650 60 1 C CNN "Maximum Voltage"
-  1 2350 27650
-  1 0 0 -1
+P 8700 31150
+F 0 "C8" H 8800 31200 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 8700 31150 60 1 C CNN
+F 1 "100.0nF" H 8800 31100 28 0 L CNN
+F 4 "100.0nF" H 8700 31150 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 8700 31150 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 8700 31150 60 1 C CNN "Maximum Voltage"
+  1 8700 31150
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:component$36 J4
 U 1 1 00000000
-P 4850 31250
-F 0 "J4" H 4650 31854 30 0 L BNN
-F 2 "can-add-on:amphenol-delta-d-pkg$38" H 4850 31250 60 1 C CNN
-F 1 "D09S33E4GV00LF" H 4650 31812 30 0 L BNN
-  1 4850 31250
+P 4950 29050
+F 0 "J4" H 4750 29654 30 0 L BNN
+F 2 "can-add-on:amphenol-delta-d-pkg$38" H 4950 29050 60 1 C CNN
+F 1 "D09S33E4GV00LF" H 4750 29612 30 0 L BNN
+  1 4950 29050
   1 0 0 -1
 $EndComp
 $Comp
-L project_symbols:component$14 U4
+L project_symbols:component$14 U2
 U 1 1 00000000
-P 1050 29100
-F 0 "U4" H 900 29454 30 0 L BNN
-F 2 "can-add-on:SOT95P280X145-5N" H 1050 29100 60 1 C CNN
-F 1 "SN6501DBVT" H 900 29412 30 0 L BNN
-  1 1050 29100
+P 2700 27500
+F 0 "U2" H 2550 27854 30 0 L BNN
+F 2 "can-add-on:SOT95P280X145-5N" H 2700 27500 60 1 C CNN
+F 1 "SN6501DBVT" H 2550 27812 30 0 L BNN
+  1 2700 27500
   1 0 0 -1
 $EndComp
 $Comp
-L project_symbols:gen-cap-cmp$55 C10
+L project_symbols:gen-cap-cmp$65 C13
 U 1 1 00000000
-P 3250 27650
-F 0 "C10" H 3350 27700 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 3250 27650 60 1 C CNN
-F 1 "1.0μF" H 3350 27600 28 0 L CNN
-F 4 "1.0μF" H 3250 27650 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 3250 27650 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 3250 27650 60 1 C CNN "Maximum Voltage"
-  1 3250 27650
+P 3000 28100
+F 0 "C13" H 3100 28150 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 3000 28100 60 1 C CNN
+F 1 "1.0μF" H 3100 28050 28 0 L CNN
+F 4 "1.0μF" H 3000 28100 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 3000 28100 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 3000 28100 60 1 C CNN "Maximum Voltage"
+  1 3000 28100
   1 0 0 -1
 $EndComp
 $Comp
-L project_symbols:gen-cap-cmp$55 C9
+L project_symbols:gen-cap-cmp$65 C11
 U 1 1 00000000
-P 4200 27550
-F 0 "C9" H 4300 27600 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 4200 27550 60 1 C CNN
-F 1 "1.0μF" H 4300 27500 28 0 L CNN
-F 4 "1.0μF" H 4200 27550 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 4200 27550 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 4200 27550 60 1 C CNN "Maximum Voltage"
-  1 4200 27550
-  0 1 1 0
+P 6600 33050
+F 0 "C11" H 6700 33100 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 6600 33050 60 1 C CNN
+F 1 "1.0μF" H 6700 33000 28 0 L CNN
+F 4 "1.0μF" H 6600 33050 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 6600 33050 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 6600 33050 60 1 C CNN "Maximum Voltage"
+  1 6600 33050
+  0 -1 -1 0
 $EndComp
 $Comp
 L project_symbols:component$13 T1
 U 1 1 00000000
-P 1750 28850
-F 0 "T1" H 1750 28850 60 1 C CNN
-F 2 "can-add-on:xfmr-760390012" H 1750 28850 60 1 C CNN
-F 1 "760390012" H 1750 28850 60 1 C CNN
-  1 1750 28850
-  1 0 0 -1
+P 5500 27950
+F 0 "T1" H 5500 27950 60 1 C CNN
+F 2 "can-add-on:xfmr-760390012" H 5500 27950 60 1 C CNN
+F 1 "760390012" H 5500 27950 60 1 C CNN
+  1 5500 27950
+  -1 0 0 1
 $EndComp
 $Comp
 L project_symbols:component$12 D2
 U 1 1 00000000
-P 5000 27750
-F 0 "D2" H 5100 27800 28 0 L CNN
-F 2 "can-add-on:two-pin-polarized-package$58" H 5000 27750 60 1 C CNN
-F 1 "MBR0520L" H 5100 27700 28 0 L CNN
-  1 5000 27750
-  0 -1 -1 0
+P 6250 32700
+F 0 "D2" H 6350 32750 28 0 L CNN
+F 2 "can-add-on:two-pin-polarized-package$68" H 6250 32700 60 1 C CNN
+F 1 "MBR0520L" H 6350 32650 28 0 L CNN
+  1 6250 32700
+  0 1 1 0
 $EndComp
 $Comp
 L project_symbols:component$12 D3
 U 1 1 00000000
-P 4600 27750
-F 0 "D3" H 4700 27800 28 0 L CNN
-F 2 "can-add-on:two-pin-polarized-package$58" H 4600 27750 60 1 C CNN
-F 1 "MBR0520L" H 4700 27700 28 0 L CNN
-  1 4600 27750
-  0 -1 -1 0
-$EndComp
-$Comp
-L project_symbols:component$63 U5
-U 1 1 00000000
-P 2500 29550
-F 0 "U5" H 2250 30004 30 0 L BNN
-F 2 "can-add-on:soic127p-package$65" H 2500 29550 60 1 C CNN
-F 1 "SI8641BB-B-IS1" H 2250 29962 30 0 L BNN
-  1 2500 29550
-  1 0 0 -1
-$EndComp
-$Comp
-L project_symbols:gen-cap-cmp$33 C11
-U 1 1 00000000
-P 2800 27650
-F 0 "C11" H 2900 27700 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 2800 27650 60 1 C CNN
-F 1 "100.0nF" H 2900 27600 28 0 L CNN
-F 4 "100.0nF" H 2800 27650 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 2800 27650 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 2800 27650 60 1 C CNN "Maximum Voltage"
-  1 2800 27650
-  1 0 0 -1
-$EndComp
-$Comp
-L project_symbols:gen-cap-cmp$33 C12
-U 1 1 00000000
-P 3850 27900
-F 0 "C12" H 3950 27950 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 3850 27900 60 1 C CNN
-F 1 "100.0nF" H 3950 27850 28 0 L CNN
-F 4 "100.0nF" H 3850 27900 60 1 C CNN "Capacitance"
-F 5 "0.002%" H 3850 27900 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNV" H 3850 27900 60 1 C CNN "Maximum Voltage"
-  1 3850 27900
+P 5850 32700
+F 0 "D3" H 5950 32750 28 0 L CNN
+F 2 "can-add-on:two-pin-polarized-package$68" H 5850 32700 60 1 C CNN
+F 1 "MBR0520L" H 5950 32650 28 0 L CNN
+  1 5850 32700
   0 1 1 0
+$EndComp
+$Comp
+L project_symbols:component$73 U4
+U 1 1 00000000
+P 3900 27350
+F 0 "U4" H 3650 27804 30 0 L BNN
+F 2 "can-add-on:soic127p-package$75" H 3900 27350 60 1 C CNN
+F 1 "SI8641BB-B-IS1" H 3650 27762 30 0 L BNN
+  1 3900 27350
+  1 0 0 -1
+$EndComp
+$Comp
+L project_symbols:gen-cap-cmp$33 C14
+U 1 1 00000000
+P 3450 28100
+F 0 "C14" H 3550 28150 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 3450 28100 60 1 C CNN
+F 1 "100.0nF" H 3550 28050 28 0 L CNN
+F 4 "100.0nF" H 3450 28100 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 3450 28100 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 3450 28100 60 1 C CNN "Maximum Voltage"
+  1 3450 28100
+  1 0 0 -1
+$EndComp
+$Comp
+L project_symbols:gen-cap-cmp$33 C15
+U 1 1 00000000
+P 5450 32900
+F 0 "C15" H 5550 32950 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 5450 32900 60 1 C CNN
+F 1 "100.0nF" H 5550 32850 28 0 L CNN
+F 4 "100.0nF" H 5450 32900 60 1 C CNN "Capacitance"
+F 5 "0.002%" H 5450 32900 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNV" H 5450 32900 60 1 C CNN "Maximum Voltage"
+  1 5450 32900
+  0 -1 -1 0
 $EndComp
 $Comp
 L project_symbols:component$11 D4
 U 1 1 00000000
-P 3900 31650
-F 0 "D4" H 3650 31854 30 0 L BNN
-F 2 "can-add-on:SC-70-3" H 3900 31650 60 1 C CNN
-F 1 "PESD1CAN-U" H 3650 31812 30 0 L BNN
-  1 3900 31650
-  0 -1 -1 0
-$EndComp
-$Comp
-L project_symbols:component$9 U6
-U 1 1 00000000
-P 3050 32750
-F 0 "U6" H 3050 32750 60 1 C CNN
-F 2 "can-add-on:tlp-175" H 3050 32750 60 1 C CNN
-F 1 "TLP175A(TPL,E" H 3050 32750 60 1 C CNN
-  1 3050 32750
+P 4200 30050
+F 0 "D4" H 3950 30254 30 0 L BNN
+F 2 "can-add-on:SC-70-3" H 4200 30050 60 1 C CNN
+F 1 "PESD1CAN-U" H 3950 30212 30 0 L BNN
+  1 4200 30050
   1 0 0 -1
 $EndComp
 $Comp
-L project_symbols:gen-res-cmp$47 R3
+L project_symbols:component$9 U5
 U 1 1 00000000
-P 2400 32650
-F 0 "R3" H 2500 32700 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 2400 32650 60 1 C CNN
-F 1 "750.0Ω" H 2500 32600 28 0 L CNN
-F 4 "750.0Ω" H 2400 32650 60 1 C CNN "Resistance"
-F 5 "0.02%" H 2400 32650 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNW" H 2400 32650 60 1 C CNN "Maximum Power"
-  1 2400 32650
+P 2900 29300
+F 0 "U5" H 2900 29300 60 1 C CNN
+F 2 "can-add-on:tlp-175" H 2900 29300 60 1 C CNN
+F 1 "TLP175A(TPL,E" H 2900 29300 60 1 C CNN
+  1 2900 29300
+  1 0 0 -1
+$EndComp
+$Comp
+L project_symbols:gen-res-cmp$82 R6
+U 1 1 00000000
+P 2300 29200
+F 0 "R6" H 2400 29250 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 2300 29200 60 1 C CNN
+F 1 "750.0Ω" H 2400 29150 28 0 L CNN
+F 4 "750.0Ω" H 2300 29200 60 1 C CNN "Resistance"
+F 5 "0.02%" H 2300 29200 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNW" H 2300 29200 60 1 C CNN "Maximum Power"
+  1 2300 29200
   0 1 1 0
 $EndComp
 $Comp
-L project_symbols:gen-res-cmp$50 R4
+L project_symbols:gen-res-cmp$84 R7
 U 1 1 00000000
-P 3650 32350
-F 0 "R4" H 3750 32400 28 0 L CNN
-F 2 "can-add-on:ipc-two-pin-package$30" H 3650 32350 60 1 C CNN
-F 1 "100.0Ω" H 3750 32300 28 0 L CNN
-F 4 "100.0Ω" H 3650 32350 60 1 C CNN "Resistance"
-F 5 "0.02%" H 3650 32350 60 1 C CNN "Tolerance"
-F 6 "UNKNOWNW" H 3650 32350 60 1 C CNN "Maximum Power"
-  1 3650 32350
-  0 -1 -1 0
+P 3400 29800
+F 0 "R7" H 3500 29850 28 0 L CNN
+F 2 "can-add-on:ipc-two-pin-package$30" H 3400 29800 60 1 C CNN
+F 1 "100.0Ω" H 3500 29750 28 0 L CNN
+F 4 "100.0Ω" H 3400 29800 60 1 C CNN "Resistance"
+F 5 "0.02%" H 3400 29800 60 1 C CNN "Tolerance"
+F 6 "UNKNOWNW" H 3400 29800 60 1 C CNN "Maximum Power"
+  1 3400 29800
+  1 0 0 -1
 $EndComp
 Wire Wire Line
-  7750 31200 7750 31150
+  1200 24650 1200 24700
 Wire Wire Line
-  7750 31400 7750 31450
+  1200 24450 1200 24400
 Wire Wire Line
-  7300 31200 7300 31150
+  1650 24650 1650 24700
 Wire Wire Line
-  7300 31400 7300 31450
+  1650 24450 1650 24400
 Wire Wire Line
-  8200 31200 8200 31150
+  2550 24650 2550 24700
 Wire Wire Line
-  8200 31400 8200 31450
+  2550 24450 2550 24400
 Wire Wire Line
-  8650 31200 8650 31150
+  2100 24650 2100 24700
 Wire Wire Line
-  8650 31400 8650 31450
+  2100 24450 2100 24400
 Wire Wire Line
-  5350 32550 5300 32550
+  3500 31700 3500 31750
 Wire Wire Line
-  5550 32550 5600 32550
+  3400 31600 3650 31600
 Wire Wire Line
-  5600 30050 5600 30100
+  3600 31600 3350 31600
 Wire Wire Line
-  5600 29850 5600 29800
+  2350 31500 2350 31450
 Wire Wire Line
-  1900 27550 1900 27500
+  2450 31600 2200 31600
 Wire Wire Line
-  1900 27750 1900 27800
+  2250 31600 2500 31600
 Wire Wire Line
-  1000 27550 1000 27500
+  3950 31600 4000 31600
 Wire Wire Line
-  1000 27750 1000 27800
+  3750 31600 3700 31600
 Wire Wire Line
-  1450 27550 1450 27500
+  1900 31600 1850 31600
 Wire Wire Line
-  1450 27750 1450 27800
+  2100 31600 2150 31600
 Wire Wire Line
-  2350 27550 2350 27500
+  1750 31600 1800 31600
 Wire Wire Line
-  2350 27750 2350 27800
+  1550 31600 1500 31600
 Wire Wire Line
-  3250 27550 3250 27500
+  4850 31600 4800 31600
 Wire Wire Line
-  3250 27750 3250 27800
+  5050 31600 5100 31600
 Wire Wire Line
-  4300 27550 4350 27550
+  2200 27600 2200 27650
 Wire Wire Line
-  4100 27550 4050 27550
+  2200 27400 2200 27350
 Wire Wire Line
-  4900 27750 4850 27750
+  1400 31900 1400 31850
 Wire Wire Line
-  5100 27750 5150 27750
+  1400 32100 1400 32150
 Wire Wire Line
-  4500 27750 4450 27750
+  2650 31850 2650 31800
 Wire Wire Line
-  4700 27750 4750 27750
+  2650 32050 2650 32100
 Wire Wire Line
-  2800 27550 2800 27500
+  3300 31850 3300 31800
 Wire Wire Line
-  2800 27750 2800 27800
+  3300 32050 3300 32100
 Wire Wire Line
-  3950 27900 4000 27900
+  7800 31250 7800 31300
 Wire Wire Line
-  3750 27900 3700 27900
+  7800 31050 7800 31000
 Wire Wire Line
-  2300 32650 2250 32650
+  8250 31250 8250 31300
 Wire Wire Line
-  2500 32650 2550 32650
+  8250 31050 8250 31000
 Wire Wire Line
-  3750 32350 3800 32350
+  9150 31250 9150 31300
 Wire Wire Line
-  3550 32350 3500 32350
+  9150 31050 9150 31000
 Wire Wire Line
-  1300 29150 1450 29150
+  8700 31250 8700 31300
 Wire Wire Line
-  1300 29050 1350 29050
+  8700 31050 8700 31000
 Wire Wire Line
-  1350 28550 1450 28550
+  3000 28000 3000 27950
 Wire Wire Line
-  1350 29050 1350 28550
+  3000 28200 3000 28250
 Wire Wire Line
-  2050 28850 2900 28850
+  6500 33050 6450 33050
 Wire Wire Line
-  2850 29350 2900 29350
+  6700 33050 6750 33050
 Wire Wire Line
-  2900 29350 2900 28850
+  6350 32700 6400 32700
 Wire Wire Line
-  2850 29250 2950 29250
+  6150 32700 6100 32700
 Wire Wire Line
-  2850 29850 2950 29850
+  5950 32700 6000 32700
 Wire Wire Line
-  2950 29850 2950 29250
+  5750 32700 5700 32700
 Wire Wire Line
-  2100 30500 2250 30500
+  3450 28000 3450 27950
+Wire Wire Line
+  3450 28200 3450 28250
+Wire Wire Line
+  5350 32900 5300 32900
+Wire Wire Line
+  5550 32900 5600 32900
+Wire Wire Line
+  2200 29200 2150 29200
+Wire Wire Line
+  2400 29200 2450 29200
+Wire Wire Line
+  3400 29900 3400 29950
+Wire Wire Line
+  3400 29700 3400 29650
+Wire Wire Line
+  2500 31600 3350 31600
+Wire Wire Line
+  2650 31800 2650 31600
+Wire Wire Line
+  3300 31800 3300 31600
+Wire Wire Line
+  2150 31600 2200 31600
+Wire Wire Line
+  3650 31600 3700 31600
+Wire Wire Line
+  4050 32500 4100 32500
+Wire Wire Line
+  4050 33150 4650 33150
+Wire Wire Line
+  4650 33150 4650 31550
+Wire Wire Line
+  4050 33150 4050 32500
+Wire Wire Line
+  1800 31600 1850 31600
+Wire Wire Line
+  4050 32300 4100 32300
+Wire Wire Line
+  4000 31600 4800 31600
+Wire Wire Line
+  4050 32300 4050 31600
+Wire Wire Line
+  4550 31600 4550 31550
+Wire Wire Line
+  1400 32200 4100 32200
+Wire Wire Line
+  1400 33000 4100 33000
+Wire Wire Line
+  1400 33000 1400 32150
+Wire Wire Line
+  5100 31600 5150 31600
+Wire Wire Line
+  4600 30800 5150 30800
+Wire Wire Line
+  4600 30850 4600 30800
+Wire Wire Line
+  5150 31600 5150 30800
+Wire Wire Line
+  2650 32150 3300 32150
+Wire Wire Line
+  2650 32150 2650 32100
+Wire Wire Line
+  3300 32150 3300 32100
+Wire Wire Line
+  3300 29600 3400 29600
+Wire Wire Line
+  3400 29650 3400 29600
+Wire Wire Line
+  2450 29200 2500 29200
+Wire Wire Line
+  1350 29850 1400 29850
+Wire Wire Line
+  1350 29200 2150 29200
+Wire Wire Line
+  1350 29850 1350 29200
+Wire Wire Line
+  3800 30100 3850 30100
+Wire Wire Line
+  3300 29000 4650 29000
+Wire Wire Line
+  3800 30100 3800 29000
+Wire Wire Line
+  3750 28800 4650 28800
+Wire Wire Line
+  3400 30000 3850 30000
+Wire Wire Line
+  3400 30000 3400 29950
+Wire Wire Line
+  3750 30000 3750 28800
+Wire Wire Line
+  4600 28700 4650 28700
+Wire Wire Line
+  4600 29500 4650 29500
+Wire Wire Line
+  4550 30050 4600 30050
+Wire Wire Line
+  4600 30050 4600 28700
+Wire Wire Line
+  2100 29750 2150 29750
+Wire Wire Line
+  2150 30250 2150 29550
+Wire Wire Line
+  2100 29850 2150 29850
 Wire Wire Line
   2100 29550 2150 29550
 Wire Wire Line
-  2100 30500 2100 29550
+  2100 29650 2150 29650
 Wire Wire Line
-  2000 29750 2150 29750
+  2100 29950 2150 29950
 Wire Wire Line
-  2000 30400 2250 30400
+  2100 30050 2150 30050
 Wire Wire Line
-  2000 30400 2000 29750
+  2100 30250 2150 30250
 Wire Wire Line
-  2050 30300 2250 30300
+  2100 30150 2150 30150
 Wire Wire Line
-  2050 29450 2150 29450
+  3000 27650 3550 27650
 Wire Wire Line
-  2050 30300 2050 29450
+  3450 27950 3450 27050
 Wire Wire Line
-  2550 32650 2650 32650
+  1350 27300 1400 27300
 Wire Wire Line
-  2200 30600 2250 30600
+  1350 27050 3550 27050
 Wire Wire Line
-  2200 32650 2250 32650
+  2700 27100 2700 27050
 Wire Wire Line
-  2200 32650 2200 30600
+  1350 27300 1350 27050
 Wire Wire Line
-  1400 29250 2150 29250
+  3000 27950 3000 27650
 Wire Wire Line
-  1400 29850 2150 29850
+  4250 27050 4300 27050
 Wire Wire Line
-  1400 28850 1450 28850
+  4250 27650 4300 27650
 Wire Wire Line
-  1400 29850 1400 28850
+  4300 27650 4300 27050
 Wire Wire Line
-  3450 32450 3950 32450
+  2100 27700 2200 27700
 Wire Wire Line
-  3950 32450 3950 32000
+  2200 27700 2200 27650
 Wire Wire Line
-  3800 32350 3850 32350
+  1300 27400 1400 27400
 Wire Wire Line
-  3850 32350 3850 32000
+  1300 28000 1400 28000
 Wire Wire Line
-  2600 31250 3900 31250
+  1300 27500 1400 27500
 Wire Wire Line
-  2600 32850 2650 32850
+  1300 28100 1400 28100
 Wire Wire Line
-  3900 31300 3900 31250
+  1300 27600 1400 27600
 Wire Wire Line
-  2600 32850 2600 31250
+  3500 27150 3500 27000
 Wire Wire Line
-  2100 29350 2150 29350
+  1300 27700 1400 27700
 Wire Wire Line
-  2950 30600 3000 30600
+  1300 28100 1300 27000
 Wire Wire Line
-  2950 30500 3000 30500
+  1300 27000 3500 27000
 Wire Wire Line
-  2950 30700 3000 30700
+  3500 27150 3550 27150
 Wire Wire Line
-  2950 30400 3000 30400
+  1300 27800 1400 27800
 Wire Wire Line
-  2100 29350 2100 29000
+  1300 27900 1400 27900
 Wire Wire Line
-  2950 30300 3000 30300
+  2700 28300 3450 28300
 Wire Wire Line
-  3000 31000 3000 29000
+  2700 28300 2700 27900
 Wire Wire Line
-  2950 30900 3000 30900
+  3000 28300 3000 28250
 Wire Wire Line
-  2950 31000 3000 31000
+  3450 28300 3450 28250
 Wire Wire Line
-  2100 29000 3000 29000
+  5650 32700 5700 32700
 Wire Wire Line
-  2950 30800 3000 30800
+  5250 32900 5300 32900
 Wire Wire Line
-  5600 32550 5650 32550
+  6050 32700 6100 32700
 Wire Wire Line
-  5250 32550 5300 32550
+  5250 33050 6450 33050
 Wire Wire Line
-  4500 32350 4550 32350
+  5650 33050 5650 32700
 Wire Wire Line
-  4500 32950 4500 32250
+  6050 33050 6050 32700
 Wire Wire Line
-  4500 32850 4550 32850
+  5250 33050 5250 32900
 Wire Wire Line
-  4500 32450 4550 32450
+  8750 32750 8800 32750
 Wire Wire Line
-  4500 32750 4550 32750
+  8400 33150 8800 33150
 Wire Wire Line
-  4500 32250 4550 32250
+  8800 33150 8800 32750
 Wire Wire Line
-  4500 32650 4550 32650
+  8400 33150 8400 33100
 Wire Wire Line
-  4500 32950 4550 32950
+  7800 31350 9150 31350
 Wire Wire Line
-  4500 32550 4550 32550
+  8700 31350 8700 31300
 Wire Wire Line
-  1000 27450 3250 27450
+  7800 31350 7800 31300
 Wire Wire Line
-  2350 27500 2350 27450
+  8250 31350 8250 31300
 Wire Wire Line
-  3250 27500 3250 27450
+  9150 31350 9150 31300
 Wire Wire Line
-  2800 27500 2800 27450
+  7800 30950 9150 30950
 Wire Wire Line
-  1900 27500 1900 27450
+  7800 31000 7800 30950
 Wire Wire Line
-  1000 27500 1000 27450
+  8250 31000 8250 30950
 Wire Wire Line
-  1450 27500 1450 27450
+  9150 31000 9150 30950
 Wire Wire Line
-  1000 27850 3250 27850
+  8700 31000 8700 30950
 Wire Wire Line
-  1000 27850 1000 27800
+  1850 26150 1900 26150
 Wire Wire Line
-  1450 27850 1450 27800
+  1500 26550 1900 26550
 Wire Wire Line
-  2350 27850 2350 27800
+  1900 26550 1900 26150
 Wire Wire Line
-  3250 27850 3250 27800
+  1500 26550 1500 26500
 Wire Wire Line
-  2800 27850 2800 27800
+  1200 24750 2550 24750
 Wire Wire Line
-  1900 27850 1900 27800
+  2100 24750 2100 24700
 Wire Wire Line
-  5100 31000 5150 31000
+  1200 24750 1200 24700
 Wire Wire Line
-  5100 30600 5500 30600
+  1650 24750 1650 24700
 Wire Wire Line
-  5100 31000 5100 30600
+  2550 24750 2550 24700
 Wire Wire Line
-  5500 30650 5500 30600
+  1200 24350 2550 24350
 Wire Wire Line
-  4450 31200 4550 31200
+  1200 24400 1200 24350
 Wire Wire Line
-  5850 31100 5900 31100
+  1650 24400 1650 24350
 Wire Wire Line
-  4450 30550 5900 30550
+  2550 24400 2550 24350
 Wire Wire Line
-  5900 31100 5900 30550
-Wire Wire Line
-  4450 31200 4450 30550
-Wire Wire Line
-  5850 31200 5950 31200
-Wire Wire Line
-  4400 31000 4550 31000
-Wire Wire Line
-  4400 30500 5950 30500
-Wire Wire Line
-  5950 31200 5950 30500
-Wire Wire Line
-  4400 31000 4400 30500
-Wire Wire Line
-  4500 31700 4550 31700
-Wire Wire Line
-  4500 30900 4550 30900
-Wire Wire Line
-  4500 31850 5500 31850
-Wire Wire Line
-  5500 31850 5500 31650
-Wire Wire Line
-  4500 31850 4500 30900
-Wire Wire Line
-  4450 30100 5400 30100
-Wire Wire Line
-  4450 29450 4550 29450
-Wire Wire Line
-  5400 30100 5400 30050
-Wire Wire Line
-  4450 30100 4450 29450
-Wire Wire Line
-  4400 30150 5600 30150
-Wire Wire Line
-  4400 29250 4550 29250
-Wire Wire Line
-  4400 30150 4400 29250
-Wire Wire Line
-  5600 30150 5600 30100
-Wire Wire Line
-  5300 30150 5300 30050
-Wire Wire Line
-  4500 29150 4550 29150
-Wire Wire Line
-  4500 29950 4550 29950
-Wire Wire Line
-  4500 29950 4500 29150
-Wire Wire Line
-  3650 27550 4050 27550
-Wire Wire Line
-  3650 27900 3700 27900
-Wire Wire Line
-  3650 27900 3650 27550
-Wire Wire Line
-  4350 27550 4400 27550
-Wire Wire Line
-  4400 27900 4400 27550
-Wire Wire Line
-  5150 27750 5200 27750
-Wire Wire Line
-  4000 27900 5200 27900
-Wire Wire Line
-  4750 27750 4800 27750
-Wire Wire Line
-  5200 27900 5200 27750
-Wire Wire Line
-  4800 27900 4800 27750
-Wire Wire Line
-  7550 31950 7950 31950
-Wire Wire Line
-  7550 32350 7600 32350
-Wire Wire Line
-  7950 32000 7950 31950
-Wire Wire Line
-  7550 32350 7550 31950
-Wire Wire Line
-  7300 31100 8650 31100
-Wire Wire Line
-  7750 31150 7750 31100
-Wire Wire Line
-  7300 31150 7300 31100
-Wire Wire Line
-  8200 31150 8200 31100
-Wire Wire Line
-  8650 31150 8650 31100
-Wire Wire Line
-  7300 31500 8650 31500
-Wire Wire Line
-  8650 31500 8650 31450
-Wire Wire Line
-  7750 31500 7750 31450
-Wire Wire Line
-  7300 31500 7300 31450
-Wire Wire Line
-  8200 31500 8200 31450
+  2100 24400 2100 24350
 Wire Notes Line
-  800 27200 7000 27200
+  800 26750 7300 26750
 Wire Notes Line
-  800 33250 7000 33250
+  800 33250 7300 33250
 Wire Notes Line
-  800 33250 800 27200
+  800 33250 800 26750
 Wire Notes Line
-  7000 33250 7000 27200
+  7300 33250 7300 26750
 Wire Notes Line
-  7100 30850 9050 30850
+  7400 30450 9400 30450
 Wire Notes Line
-  7100 33250 9050 33250
+  7400 33250 9400 33250
 Wire Notes Line
-  7100 33250 7100 30850
+  7400 33250 7400 30450
 Wire Notes Line
-  9050 33250 9050 30850
-Text Label 2050 29150 0 40 ~
-net_iso$51_xfrmr_p6
-Text Label 2050 28550 0 40 ~
-net_iso$51_xfrmr_p3
-Text Label 2850 29350 0 40 ~
-net_iso$61_iso_GND2
-Text Label 2850 29850 0 40 ~
-net_iso$61_en2
-Text Label 2850 29550 0 40 ~
-net_xr-b_s
-Text Label 2850 29750 0 40 ~
-net_xr-b_uart_rx
-Text Label 2850 29450 0 40 ~
-net_xr-b_uart_tx
-Text Label 3500 32350 2 40 ~
-net_rid$71_p2
-Text Label 3450 33050 0 40 ~
-net_rid$71_p2
-Text Label 2150 29250 2 40 ~
-VIO-B
-Text Label 1050 28700 1 40 ~
-VIO-B
-Text Label 3450 32450 0 40 ~
-net_j-b_p5
-Text Label 3850 32000 3 40 ~
-net_rid$71_p1
-Text Label 2250 30200 2 40 ~
-VIO-A
-Text Label 2650 32850 2 40 ~
-gnd
-Text Label 2950 30800 0 40 ~
-gnd
-Text Label 1050 29500 3 40 ~
-gnd
-Text Label 4550 32150 2 40 ~
-VIO-B
-Text Label 6450 32950 0 40 ~
-net_rid$49_p2
-Text Label 5250 32450 0 40 ~
-CANA-S
-Text Label 5250 32350 0 40 ~
-CANA-RX
-Text Label 5250 32250 0 40 ~
-CANA-TX
-Text Label 6450 32350 0 40 ~
+  9400 33250 9400 30450
+Wire Notes Line
+  800 24150 2750 24150
+Wire Notes Line
+  800 26650 2750 26650
+Wire Notes Line
+  800 26650 800 24150
+Wire Notes Line
+  2750 26650 2750 24150
+Text Label 1400 31850 1 40 ~
+net_q$44_0_g
+Text Label 3500 31750 3 40 ~
+net_q$44_0_g
+Text Label 2350 31450 1 40 ~
+net_q$44_0_g
+Text Label 4100 32500 2 40 ~
 CANA-L
-Text Label 5650 32750 2 40 ~
-gnd
-Text Label 4550 32850 2 40 ~
-gnd
-Text Label 1000 27500 1 40 ~
-VIO-B
-Text Label 2350 27800 3 40 ~
-gnd
-Text Label 5150 31300 2 40 ~
-net_xr-b_s
-Text Label 5150 31200 2 40 ~
-net_xr-b_uart_rx
-Text Label 5150 31100 2 40 ~
-net_xr-b_uart_tx
-Text Label 5500 30650 1 40 ~
-VIO-B
-Text Label 4550 31200 2 40 ~
-net_j-b_p5
-Text Label 4550 31000 2 40 ~
-net_rid$71_p1
-Text Label 4550 31700 2 40 ~
-gnd
-Text Label 5600 29800 1 40 ~
-net_rid$49_p2
-Text Label 4550 29450 2 40 ~
+Text Label 1850 31600 2 40 ~
 CANA-L
-Text Label 4550 29250 2 40 ~
+Text Label 4100 32300 2 40 ~
 CANA-H
-Text Label 4550 29950 2 40 ~
+Text Label 4100 33000 2 40 ~
 gnd
-Text Label 5350 29350 1 40 ~
+Text Label 4600 30850 1 40 ~
 gnd
-Text Label 4450 27750 2 40 ~
-net_iso$51_xfrmr_p6
-Text Label 4850 27750 2 40 ~
-net_iso$51_xfrmr_p3
-Text Label 4050 27550 2 40 ~
-net_iso$61_iso_GND2
-Text Label 5150 27750 0 40 ~
-net_iso$61_en2
-Text Label 7600 32350 2 40 ~
+Text Label 3300 32100 3 40 ~
+gnd
+Text Label 1500 31600 2 40 ~
+gnd
+Text Label 1400 29750 2 40 ~
+glasgow_PB3
+Text Label 1400 29650 2 40 ~
+glasgow_PB2
+Text Label 1400 29550 2 40 ~
+glasgow_PB1
+Text Label 4650 29000 2 40 ~
+net_ssr$79_drain1
+Text Label 4650 28800 2 40 ~
+net_j-b_p3
+Text Label 4650 28700 2 40 ~
+net_xr-b_gnd
+Text Label 1400 29450 2 40 ~
 VIO-A
-Text Label 7600 32650 2 40 ~
+Text Label 2500 29400 2 40 ~
+gnd
+Text Label 2100 29850 0 40 ~
+gnd
+Text Label 2950 27550 0 40 ~
+net_iso$61_xfrmr_p5
+Text Label 2950 27450 0 40 ~
+net_iso$61_xfrmr_p1
+Text Label 4250 27350 0 40 ~
+net_xr-b_s
+Text Label 4250 27550 0 40 ~
+net_xr-b_uart_rx
+Text Label 4250 27250 0 40 ~
+net_xr-b_uart_tx
+Text Label 1400 27300 2 40 ~
+net_iso$71_en1
+Text Label 3550 27350 2 40 ~
+glasgow_PB3
+Text Label 3550 27550 2 40 ~
+glasgow_PB2
+Text Label 3550 27250 2 40 ~
+glasgow_PB1
+Text Label 4250 27650 0 40 ~
+VIO-B-ISO
+Text Label 4250 27150 0 40 ~
+net_xr-b_gnd
+Text Label 2200 27350 1 40 ~
+net_q$44_0_g
+Text Label 2100 27600 0 40 ~
 CANA-S
-Text Label 7600 32550 2 40 ~
+Text Label 2100 27500 0 40 ~
 CANA-RX
-Text Label 7600 32450 2 40 ~
+Text Label 2100 27400 0 40 ~
 CANA-TX
-Text Label 8300 32450 0 40 ~
-CANA-L
-Text Label 8300 32550 0 40 ~
-CANA-H
-Text Label 7950 33000 3 40 ~
+Text Label 1400 27800 2 40 ~
 gnd
-Text Label 8650 31150 1 40 ~
+Text Label 2700 27900 3 40 ~
+gnd
+Text Label 6000 32700 0 40 ~
+net_iso$61_xfrmr_p6
+Text Label 6400 32700 0 40 ~
+net_iso$61_xfrmr_p3
+Text Label 6450 33050 2 40 ~
+VIO-B-ISO
+Text Label 6750 33050 0 40 ~
+net_xr-b_gnd
+Text Label 5600 32900 0 40 ~
+net_xr-b_gnd
+Text Label 5200 27650 2 40 ~
+net_iso$61_xfrmr_p6
+Text Label 5200 28250 2 40 ~
+net_iso$61_xfrmr_p3
+Text Label 5800 27650 0 40 ~
+net_iso$61_xfrmr_p5
+Text Label 5800 28250 0 40 ~
+net_iso$61_xfrmr_p1
+Text Label 5800 27950 0 40 ~
+net_iso$71_en1
+Text Label 5200 27950 2 40 ~
+net_xr-b_gnd
+Text Label 8750 32450 0 40 ~
+net_xr-b_s
+Text Label 8750 32550 0 40 ~
+net_xr-b_uart_rx
+Text Label 8750 32650 0 40 ~
+net_xr-b_uart_tx
+Text Label 8750 32750 0 40 ~
+VIO-B-ISO
+Text Label 8050 32650 2 40 ~
+net_ssr$79_drain1
+Text Label 8050 32550 2 40 ~
+net_j-b_p3
+Text Label 8400 32100 1 40 ~
+net_xr-b_gnd
+Text Label 7800 31300 3 40 ~
+VIO-B-ISO
+Text Label 7800 31000 1 40 ~
+net_xr-b_gnd
+Text Label 1850 26150 0 40 ~
 VIO-A
-Text Label 8200 31450 3 40 ~
+Text Label 1850 25850 0 40 ~
+CANA-S
+Text Label 1850 25950 0 40 ~
+CANA-RX
+Text Label 1850 26050 0 40 ~
+CANA-TX
+Text Label 1150 26050 2 40 ~
+CANA-L
+Text Label 1150 25950 2 40 ~
+CANA-H
+Text Label 1500 25500 1 40 ~
 gnd
-Text Label 7100 30850 0 40 ~
+Text Label 1200 24700 3 40 ~
+VIO-A
+Text Label 1200 24400 1 40 ~
+gnd
+Text Label 7400 30450 0 40 ~
+B
+Text Label 800 24150 0 40 ~
 A
-Connection ~ 1400 29250
-Connection ~ 3000 30600
-Connection ~ 3000 30500
-Connection ~ 3000 30700
-Connection ~ 3000 30400
-Connection ~ 3000 30300
-Connection ~ 3000 30900
-Connection ~ 3000 30800
-Connection ~ 4500 32350
-Connection ~ 4500 32850
-Connection ~ 4500 32450
-Connection ~ 4500 32750
-Connection ~ 4500 32650
-Connection ~ 4500 32550
-Connection ~ 2350 27450
-Connection ~ 2800 27450
-Connection ~ 1900 27450
-Connection ~ 1450 27450
-Connection ~ 1450 27850
-Connection ~ 2350 27850
-Connection ~ 2800 27850
-Connection ~ 1900 27850
-Connection ~ 4500 31700
-Connection ~ 5300 30150
-Connection ~ 4400 27900
-Connection ~ 4800 27900
-Connection ~ 7750 31100
-Connection ~ 8200 31100
-Connection ~ 7750 31500
-Connection ~ 8200 31500
+Connection ~ 2650 31600
+Connection ~ 3300 31600
+Connection ~ 4050 31600
+Connection ~ 4550 31600
+Connection ~ 1400 32200
+Connection ~ 3800 29000
+Connection ~ 3750 30000
+Connection ~ 4600 29500
+Connection ~ 2150 29750
+Connection ~ 2150 29850
+Connection ~ 2150 29650
+Connection ~ 2150 29950
+Connection ~ 2150 30050
+Connection ~ 2150 30150
+Connection ~ 3450 27650
+Connection ~ 3450 27050
+Connection ~ 2700 27050
+Connection ~ 1300 27400
+Connection ~ 1300 28000
+Connection ~ 1300 27500
+Connection ~ 1300 27600
+Connection ~ 1300 27700
+Connection ~ 1300 27800
+Connection ~ 1300 27900
+Connection ~ 3000 28300
+Connection ~ 5650 33050
+Connection ~ 6050 33050
+Connection ~ 8700 31350
+Connection ~ 8250 31350
+Connection ~ 8250 30950
+Connection ~ 8700 30950
+Connection ~ 2100 24750
+Connection ~ 1650 24750
+Connection ~ 1650 24350
+Connection ~ 2100 24350
 $EndSCHEMATC

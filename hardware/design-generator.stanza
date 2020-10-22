@@ -31,31 +31,30 @@ pcb-module can-addon :
   net CANA-S (xr-a.s,       glasgow.A.io[3])
   net VIO-A (xr-a.vcc, xr-a.vio,  glasgow.A.vio.vdd)
   ocdb/protection/esd-clamp(xr-a.can, gnd)
-  ocdb/terminations/terminate-can(xr-a.can, gnd, "isolated-switchable", glasgow.A.io[4])
+  ocdb/terminations/terminate-can(xr-a.can, gnd, "switchable", glasgow.A.io[4])
 
   inst xr-b : {ocdb/texas-instruments/TCAN1051/module}
   inst j-b : {ocdb/amphenol/delta-d/component(9, "female", "right-angle")}
-  net (xr-b.gnd, j-b.p[2] j-b.shield, gnd)
+  val isolated-viob = ocdb/protection/isolate-power(glasgow.B.vio)
+  net (xr-b.gnd, j-b.p[2] j-b.shield, {isolated-viob}.gnd)
   net (xr-b.can.canh j-b.p[3])
   net (xr-b.can.canl j-b.p[5])
-
   ocdb/protection/isolate-logic([[glasgow.B.io[1] xr-b.uart.tx]
                                  [glasgow.B.io[2] xr-b.uart.rx]
                                  [glasgow.B.io[3] xr-b.s]], 
                                  glasgow.B.vio, 
-                                 ocdb/protection/isolate-power(glasgow.B.vio))
+                                 isolated-viob)
 
-  net VIO-B (xr-b.vcc, xr-b.vio,  glasgow.B.vio.vdd)
-  ocdb/protection/esd-clamp(xr-b.can, gnd)
+  net VIO-B-ISO (xr-b.vcc, xr-b.vio,  {isolated-viob}.vdd)
+  ocdb/protection/esd-clamp(xr-b.can, isolated-viob.gnd)
   ocdb/terminations/terminate-can(xr-b.can, gnd, "isolated-switchable", glasgow.B.io[4])
 
   package(glasgow) at loc(0.0,0.0) on Top
   layout-group(xr-a) = A
   schematic-group(xr-a) = A
-  ; layout-group(xr-b) = B
-  ; schematic-group(xr-b) = B
+  layout-group(xr-b) = B
+  schematic-group(xr-b) = B
 
-; print-esir("Input.txt")
 
 val main-design = default-board(can-addon, 2, 48.0, 40.0)
 view(main-design)

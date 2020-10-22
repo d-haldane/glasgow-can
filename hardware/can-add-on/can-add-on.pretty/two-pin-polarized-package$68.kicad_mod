@@ -1,4 +1,4 @@
-(module two-pin-polarized-package$58 (layer F.Cu)
+(module two-pin-polarized-package$68 (layer F.Cu)
   (pad c smd rect
     (at -1.635 0.0 0.0)
     (size 0.88 1.02)
