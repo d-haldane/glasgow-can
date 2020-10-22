@@ -23,36 +23,39 @@ pcb-module can-addon :
   inst xr-a : {ocdb/texas-instruments/TCAN1051/module}
   inst j-a : {ocdb/amphenol/delta-d/component(9, "female", "right-angle")}
   net (xr-a.gnd, j-a.p[2] j-a.shield, gnd)
-  net (xr-a.can.canh j-a.p[3])
-  net (xr-a.can.canl j-a.p[5])
-  require can-a:{banked-io("A")}[4] from glasgow
-  net (xr-a.uart.tx, can-a[0].gpio)
-  net (xr-a.uart.rx, can-a[1].gpio)
-  net (xr-a.s,       can-a[2].gpio)
-  net (xr-a.vcc, xr-a.vio,  glasgow.A.vio)
+  net CANA-H (xr-a.can.canh j-a.p[3])
+  net CANA-L (xr-a.can.canl j-a.p[5])
+
+  net CANA-TX (xr-a.uart.tx, glasgow.A.io[1])
+  net CANA-RX (xr-a.uart.rx, glasgow.A.io[2])
+  net CANA-S (xr-a.s,       glasgow.A.io[3])
+  net VIO-A (xr-a.vcc, xr-a.vio,  glasgow.A.vio.vdd)
   ocdb/protection/esd-clamp(xr-a.can, gnd)
-  ocdb/terminations/terminate-can(xr-a.can, gnd, "isolated-switchable", can-a[3].gpio)
+  ocdb/terminations/terminate-can(xr-a.can, gnd, "isolated-switchable", glasgow.A.io[4])
 
   inst xr-b : {ocdb/texas-instruments/TCAN1051/module}
   inst j-b : {ocdb/amphenol/delta-d/component(9, "female", "right-angle")}
   net (xr-b.gnd, j-b.p[2] j-b.shield, gnd)
-  require can-b:{banked-io("B")}[4] from glasgow
   net (xr-b.can.canh j-b.p[3])
   net (xr-b.can.canl j-b.p[5])
-  net (xr-b.uart.tx, can-b[0].gpio)
-  net (xr-b.uart.rx, can-b[1].gpio)
-  net (xr-b.s,       can-b[2].gpio)
-  net (xr-b.vcc, xr-b.vio,  glasgow.B.vio)
+
+  ocdb/protection/isolate-logic([[glasgow.B.io[1] xr-b.uart.tx]
+                                 [glasgow.B.io[2] xr-b.uart.rx]
+                                 [glasgow.B.io[3] xr-b.s]], 
+                                 glasgow.B.vio, 
+                                 ocdb/protection/isolate-power(glasgow.B.vio))
+
+  net VIO-B (xr-b.vcc, xr-b.vio,  glasgow.B.vio.vdd)
   ocdb/protection/esd-clamp(xr-b.can, gnd)
-  ocdb/terminations/terminate-can(xr-b.can, gnd, "isolated-switchable", can-b[3].gpio)
+  ocdb/terminations/terminate-can(xr-b.can, gnd, "isolated-switchable", glasgow.B.io[4])
 
   package(glasgow) at loc(0.0,0.0) on Top
   layout-group(xr-a) = A
   schematic-group(xr-a) = A
-  layout-group(xr-b) = B
-  schematic-group(xr-b) = B
+  ; layout-group(xr-b) = B
+  ; schematic-group(xr-b) = B
 
-print-esir("Input.txt")
+; print-esir("Input.txt")
 
 val main-design = default-board(can-addon, 2, 48.0, 40.0)
 view(main-design)

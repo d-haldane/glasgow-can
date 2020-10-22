@@ -15,9 +15,8 @@ defpackage glasgow :
 
 ; Set up a new type of port for glasgow
 public pcb-bundle glasgow-io:
-  pin vio
+  port vio : power
   pin vsense
-  pin gnd
   port io : pin[{1 through 8}]
 
 ; Set up glasgow interface, based on planned vio levels for io banks a and b
@@ -31,7 +30,7 @@ public pcb-module add-on (vio-a:Double, vio-b:Double):
   package(header[1]) at loc(17.78, 0.0, 0.0) on Bottom
 
   for i in 1 through 8 do :
-    net (gnd, A.gnd, B.gnd, header[0].p[2 * i + 1], header[1].p[2 * i + 2])
+    net (gnd, A.vio.gnd, B.vio.gnd, header[0].p[2 * i + 1], header[1].p[2 * i + 2])
     net PA[i] (A.io[i], header[0].p[2 * i + 2])
     net PB[i] (B.io[i], header[1].p[2 * i + 1])
     ; Set up capabilities for automated pin assignment
@@ -45,10 +44,10 @@ public pcb-module add-on (vio-a:Double, vio-b:Double):
     properties(B.io[i]):
       apply-digital-io-params(0.3 * vio-b, 0.7 * vio-b, 0.0, vio-b)
 
-  net (A.vio, header[1].p[1])
+  net (A.vio.vdd, header[1].p[1])
   properties(A.vio):
     apply-power-supply-pin-params(vio-a, 0.15)
-  net (B.vio, header[0].p[1])
+  net (B.vio.vdd, header[0].p[1])
   properties(B.vio):
     apply-power-supply-pin-params(vio-a, 0.15)
 
