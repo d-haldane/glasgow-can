@@ -1,4 +1,4 @@
-(module pin-header-pkg$19 (layer F.Cu)
+(module pin-header-pkg$17 (layer F.Cu)
   (pad 1 thru_hole circle
     (at -1.27 -11.43 0.0)
     (size 1.7 1.7)

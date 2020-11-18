@@ -1,4 +1,4 @@
-(module soic127p-package$25 (layer F.Cu)
+(module soic127p-package$23 (layer F.Cu)
   (pad 1 smd rect
     (at -2.5 -1.905 270.0)
     (size 0.6 1.5)

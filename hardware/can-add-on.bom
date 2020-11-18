@@ -1,0 +1,112 @@
+Notes; Description; Instances; Datasheet; References; Manufacturer; MPN; Vendor; SKU; Qty; Price; Cost; Total; $16.64
+Auto Selected; Transformer, AEC-Q200, 475UH, SMT; iso$51.xfrmr; http://datasheet.octopart.com/760390012-W%C3%BCrth-Elektronik-datasheet-141445862.pdf; T1; Würth Elektronik; 760390012; Digi-Key; 732-4456-1-ND; 1; $1.9; $1.9
+Auto Selected; Low Power Quad Channel Digital Isolator 16-Pin SOIC N; iso$61.iso; http://datasheet.octopart.com/SI8641BB-B-IS1-Silicon-Laboratories-datasheet-26355200.pdf; U5; Silicon Labs; SI8641BB-B-IS1; Digi-Key; 336-2566-ND; 1; $1.77; $1.77
+Auto Selected; Conv DC-DC 3V to 5.5V Non-Inv/Inv/Step Up/Step Down Single-Out 0V to 11V 0.35A 5-Pin SOT-23 T/R; iso$51.drv; https://octopart.com/click/track?ct=datasheets&hlid=30066840&ppid=22367459&sid=370&sig=051a444; U4; Texas Instruments; SN6501DBVT; Digi-Key; 296-30388-1-ND; 1; $2.34; $2.34
+Auto Selected; Conn  D-Sub  PCBSocket  RightAngle  Solder  9-Cnts  MetalFace  DeltaDSeries; j-b; http://datasheet.octopart.com/D09S33E4GV00LF-Areva-datasheet-121788.pdf; J4; Amphenol ICC / FCI; D09S33E4GV00LF; Digi-Key; 609-1486-ND; 1; $1.78; $1.78
+Auto Selected; Automotive Fault Protected CAN Transceiver With Flexible Data-Rate 8-SOIC -55 to 125; xr-b.xcvr, xr-a.xcvr; https://octopart.com/click/track?ct=datasheets&hlid=30114396&ppid=71651935&sid=370&sig=07f8782; U3 U1; Texas Instruments; TCAN1051GVDRQ1; Digi-Key; 296-44222-1-ND; 2; $1.12; $2.24
+Auto Selected; Conn  D-Sub  PCBPlug  Straight  Solder  9-Cnts  MetalFace  DeltaDSeries; j-a; http://datasheet.octopart.com/D09P24A4GV00LF-FCI-datasheet-11551470.pdf; J3; Amphenol ICC / FCI; D09P24A4GV00LF; Digi-Key; 609-1479-ND; 1; $2.41; $2.41
+Auto Selected; Schottky Power Rectifier, Surface Mount, 0.5 A, 20 V; iso$51.d[1], iso$51.d[0]; http://datasheet.octopart.com/MBR0520L-ON-Semiconductor-datasheet-115019077.pdf; D3 D2; ON Semiconductor; MBR0520L; Digi-Key; MBR0520LCT-ND; 2; $0.33; $0.66
+Auto Selected; Relay Ssr 15MA 1.4V Dc-in Dc-out 4-PIN So T/r; ssr$69, ssr$42; ; U6 U2; Toshiba; TLP175A(TPL,E; Digi-Key; TLP175A(TPLECT-ND; 2; $1.11; $2.22
+Auto Selected; Res Thin Film 0402 100 Ohm 0.1% 1/10W ±25ppm/°C Molded SMD SMD Paper T/R; rid$71, rid$47; http://datasheet.octopart.com/TNPW0402100RBEED-Vishay-datasheet-21270915.pdf; R4 R2; Vishay; TNPW0402100RBEED; Digi-Key; TNP100DACT-ND; 2; $0.56; $1.12
+Auto Selected; Res Thick Film 0402 750 Ohm 1% 1/10W ±100ppm/°C Molded SMD Punched Carrier T/R; rid$70, rid$44; http://datasheet.octopart.com/ERJ-2RKF7500X-Panasonic-datasheet-13266541.pdf; R3 R1; Panasonic; ERJ-2RKF7500X; Digi-Key; P750LCT-ND; 2; $0.1; $0.2
+No Matching Part; ; clamp$68, clamp$39; ; D4 D1; ; PESD1CAN-U; ; ; 2; ; $0.0
+No Matching Part; ; glasgow.header[1], glasgow.header[0]; ; J2 J1; ; 20X2-pin-header; ; ; 2; ; $0.0
+No Information; ; iso$51.cap$54; ; C9; ; ; ; ; 1; ; $0.0
+No Information; ; xr-b.cap$33; ; C8; ; ; ; ; 1; ; $0.0
+No Information; ; iso$61.cap$67; ; C12; ; ; ; ; 1; ; $0.0
+No Information; ; xr-b.cap$32; ; C7; ; ; ; ; 1; ; $0.0
+No Information; ; xr-a.cap$30; ; C2; ; ; ; ; 1; ; $0.0
+No Information; ; xr-a.cap$32; ; C3; ; ; ; ; 1; ; $0.0
+No Information; ; iso$61.cap$66; ; C11; ; ; ; ; 1; ; $0.0
+No Information; ; xr-a.cap$33; ; C4; ; ; ; ; 1; ; $0.0
+No Information; ; xr-b.cap$30; ; C6; ; ; ; ; 1; ; $0.0
+No Information; ; xr-b.cap$25; ; C5; ; ; ; ; 1; ; $0.0
+No Information; ; iso$51.cap$56; ; C10; ; ; ; ; 1; ; $0.0
+No Information; ; xr-a.cap$25; ; C1; ; ; ; ; 1; ; $0.0
+
+Errors:
+The instances iso$51.xfrmr (T1) were assigned part 760390012, which is available from the following vendors. Please indicate the preferred vendor in the selection document.
+  Digi-Key for $1.9 (SKU = 732-4456-1-ND)
+  Digi-Key for $1.9 (SKU = 732-4456-6-ND)
+  Mouser for $1.95 (SKU = 710-760390012)
+The instances iso$61.iso (U5) were assigned part SI8641BB-B-IS1, which is available from the following vendors. Please indicate the preferred vendor in the selection document.
+  Digi-Key for $1.77 (SKU = 336-2566-ND)
+  Mouser for $1.77 (SKU = 634-SI8641BB-B-IS1)
+The instances iso$51.drv (U4) were assigned part SN6501DBVT, which is available from the following vendors. Please indicate the preferred vendor in the selection document.
+  Digi-Key for $2.34 (SKU = 296-30388-1-ND)
+  Digi-Key for $2.34 (SKU = 296-30388-6-ND)
+  Mouser for $2.34 (SKU = 595-SN6501DBVT)
+The instances j-b (J4) were assigned part D09S33E4GV00LF, which is available from the following vendors. Please indicate the preferred vendor in the selection document.
+  Digi-Key for $1.78 (SKU = 609-1486-ND)
+  Mouser for $1.77 (SKU = 649-D09S33E4GV00LF)
+The instances xr-b.xcvr (U3), xr-a.xcvr (U1) were assigned part TCAN1051GVDRQ1, which is available from the following vendors. Please indicate the preferred vendor in the selection document.
+  Digi-Key for $1.12 (SKU = 296-44222-1-ND)
+  Digi-Key for $1.12 (SKU = 296-44222-6-ND)
+  Mouser for $1.12 (SKU = 595-TCAN1051GVDRQ1)
+The instances j-a (J3) were assigned part D09P24A4GV00LF, which is available from the following vendors. Please indicate the preferred vendor in the selection document.
+  Digi-Key for $2.41 (SKU = 609-1479-ND)
+  Mouser for $2.41 (SKU = 649-D09P24A4GV00LF)
+The instances iso$51.d[1] (D3), iso$51.d[0] (D2) were assigned part MBR0520L, which is available from the following vendors. Please indicate the preferred vendor in the selection document.
+  Digi-Key for $0.33 (SKU = MBR0520LCT-ND)
+  Digi-Key for $0.33 (SKU = MBR0520LDKR-ND)
+  Mouser for $0.36 (SKU = 512-MBR0520L)
+The instances ssr$69 (U6), ssr$42 (U2) were assigned part TLP175A(TPL,E, which is available from the following vendors. Please indicate the preferred vendor in the selection document.
+  Digi-Key for $1.11 (SKU = TLP175A(TPLECT-ND)
+  Digi-Key for $1.11 (SKU = TLP175A(TPLEDKR-ND)
+  Mouser for $1.12 (SKU = 757-TLP175A(TPLE)
+The instances rid$71 (R4), rid$47 (R2) require electrical model Resistor(100.0, 2.0, 0.0625) and 0402 case package, for which the following parts are appropriate. Please indicate the preferred vendor in the selection document.
+  Part TNPW0402100RBEED, with electrical model Resistor(100.0, 0.1, 0.063) and "0402" case package, is available at:
+    Digi-Key for $0.56 (SKU = TNP100DACT-ND)
+    Digi-Key for $0.56 (SKU = TNP100DADKR-ND)
+    Mouser for $0.64 (SKU = 71-TNPW0402100RBEED)
+  Part TNPW0402100RBEED, with electrical model Resistor(100.0, 0.1, 0.063) and "0402" case package, is available at:
+    Digi-Key for $0.56 (SKU = TNP100DACT-ND)
+    Digi-Key for $0.56 (SKU = TNP100DADKR-ND)
+    Mouser for $0.64 (SKU = 71-TNPW0402100RBEED)
+  Part TNPW0402100RBEED, with electrical model Resistor(100.0, 0.1, 0.063) and "0402" case package, is available at:
+    Digi-Key for $0.56 (SKU = TNP100DACT-ND)
+    Digi-Key for $0.56 (SKU = TNP100DADKR-ND)
+    Mouser for $0.64 (SKU = 71-TNPW0402100RBEED)
+  Part ERA-2AED101X, with electrical model Resistor(100.0, 0.5, 0.063) and "0402" case package, is available at:
+    Digi-Key for $0.19 (SKU = P100DECT-ND)
+    Digi-Key for $0.19 (SKU = P100DEDKR-ND)
+    Mouser for $0.22 (SKU = 667-ERA-2AED101X)
+  Part ERA-2AED101X, with electrical model Resistor(100.0, 0.5, 0.063) and "0402" case package, is available at:
+    Digi-Key for $0.19 (SKU = P100DECT-ND)
+    Digi-Key for $0.19 (SKU = P100DEDKR-ND)
+    Mouser for $0.22 (SKU = 667-ERA-2AED101X)
+The instances rid$70 (R3), rid$44 (R1) require electrical model Resistor(750.0, 2.0, 0.0625) and 0402 case package, for which the following parts are appropriate. Please indicate the preferred vendor in the selection document.
+  Part ERJ-2RKF7500X, with electrical model Resistor(750.0, 1.0, 0.1) and "0402" case package, is available at:
+    Digi-Key for $0.1 (SKU = P750LCT-ND)
+    Digi-Key for $0.1 (SKU = P750LDKR-ND)
+    Mouser for $0.1 (SKU = 667-ERJ-2RKF7500X)
+  Part ERJ-2RKF7500X, with electrical model Resistor(750.0, 1.0, 0.1) and "0402" case package, is available at:
+    Digi-Key for $0.1 (SKU = P750LCT-ND)
+    Digi-Key for $0.1 (SKU = P750LDKR-ND)
+    Mouser for $0.1 (SKU = 667-ERJ-2RKF7500X)
+  Part ERJ-2RKF7500X, with electrical model Resistor(750.0, 1.0, 0.1) and "0402" case package, is available at:
+    Digi-Key for $0.1 (SKU = P750LCT-ND)
+    Digi-Key for $0.1 (SKU = P750LDKR-ND)
+    Mouser for $0.1 (SKU = 667-ERJ-2RKF7500X)
+  Part RR0510P-751-D, with electrical model Resistor(750.0, 0.5, 0.0625) and "0402" case package, is available at:
+    Digi-Key for $0.1 (SKU = RR05P750DCT-ND)
+    Digi-Key for $0.1 (SKU = RR05P750DDKR-ND)
+    Mouser for $0.1 (SKU = 754-RR0510P-751D)
+  Part RR0510P-751-D, with electrical model Resistor(750.0, 0.5, 0.0625) and "0402" case package, is available at:
+    Digi-Key for $0.1 (SKU = RR05P750DCT-ND)
+    Digi-Key for $0.1 (SKU = RR05P750DDKR-ND)
+    Mouser for $0.1 (SKU = 754-RR0510P-751D)
+The instances clamp$68 (D4), clamp$39 (D1) were assigned part PESD1CAN-U, but it is out of stock.
+The instances glasgow.header[1] (J2), glasgow.header[0] (J1) were assigned part 20X2-pin-header, but it is out of stock.
+The instance iso$51.cap$54 (C9) has no assigned part.
+The instance xr-b.cap$33 (C8) has no assigned part.
+The instance iso$61.cap$67 (C12) has no assigned part.
+The instance xr-b.cap$32 (C7) has no assigned part.
+The instance xr-a.cap$30 (C2) has no assigned part.
+The instance xr-a.cap$32 (C3) has no assigned part.
+The instance iso$61.cap$66 (C11) has no assigned part.
+The instance xr-a.cap$33 (C4) has no assigned part.
+The instance xr-b.cap$30 (C6) has no assigned part.
+The instance xr-b.cap$25 (C5) has no assigned part.
+The instance iso$51.cap$56 (C10) has no assigned part.
+The instance xr-a.cap$25 (C1) has no assigned part.

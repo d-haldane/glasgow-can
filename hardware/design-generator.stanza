@@ -13,6 +13,7 @@ defpackage design-generator :
   import ocdb/generic-components
   import ocdb/bundles
   import glasgow
+  ; import ocdb/db-parts
 
 ; Main module. Code inside here gets converted to hardware.
 pcb-module can-addon :
@@ -21,7 +22,7 @@ pcb-module can-addon :
   net gnd (glasgow.gnd)
 
   inst xr-a : {ocdb/texas-instruments/TCAN1051/module}
-  inst j-a : {ocdb/amphenol/delta-d/component(9, "female", "right-angle")}
+  inst j-a : {ocdb/amphenol/delta-d/component(9, "male", "vertical")}
   net (xr-a.gnd, j-a.p[2] j-a.shield, gnd)
   net CANA-H (xr-a.can.canh j-a.p[3])
   net CANA-L (xr-a.can.canl j-a.p[5])
@@ -31,13 +32,13 @@ pcb-module can-addon :
   net CANA-S  (xr-a.s,       glasgow.A.io[3])
   net VIO-A   (xr-a.vcc, xr-a.vio,  glasgow.A.vio.vdd)
   ocdb/protection/esd-clamp(xr-a.can, gnd)
-  ocdb/terminations/terminate-can(xr-a.can, gnd, "switchable", glasgow.A.io[4])
-
+  ocdb/terminations/terminate-can(xr-a.can, gnd, "isolated-switchable", glasgow.A.io[4])
 
   ; Isolated channel.
   inst xr-b : {ocdb/texas-instruments/TCAN1051/module}
   inst j-b : {ocdb/amphenol/delta-d/component(9, "female", "right-angle")}
-  
+
+  net VIO-B  (glasgow.B.vio.vdd)
   val isolated-viob = ocdb/protection/isolate-power(glasgow.B.vio)
 
   net (xr-b.gnd, j-b.p[2] j-b.shield, {isolated-viob}.gnd)
@@ -49,18 +50,17 @@ pcb-module can-addon :
                                   glasgow.B.vio,  isolated-viob)
 
   net VIO-B-ISO (xr-b.vcc, xr-b.vio,  {isolated-viob}.vdd)
+  net ISO-GND ({isolated-viob}.gnd)
+
   ocdb/protection/esd-clamp(xr-b.can, isolated-viob.gnd)
   ocdb/terminations/terminate-can(xr-b.can, gnd, "isolated-switchable", glasgow.B.io[4])
 
-
-
-
   package(glasgow) at loc(0.0,0.0) on Top
-  layout-group(xr-a) = A
-  schematic-group(xr-a) = A
-  layout-group(xr-b) = B
-  schematic-group(xr-b) = B
-
+  group-modules([[glasgow] [xr-b j-b] [xr-a j-a]])
+  symbol(gnd) = {ocdb/symbols/ground-sym}
+  symbol(VIO-B-ISO) = {ocdb/symbols/supply-sym}
+  symbol(VIO-A) = {ocdb/symbols/supply-sym}
+  symbol(VIO-B) = {ocdb/symbols/supply-sym}
 
 val main-design = default-board(can-addon, 2, 48.0, 40.0)
 view(main-design)
@@ -68,8 +68,9 @@ view(main-design)
 export-kicad("can-add-on", [`place => true 
                       `gen-board => true 
                       `gen-schematic => true 
+                      `check-log => "can.txt" 
                       `fresh => true 
                       `schematic-version => 4
-                      `param-configs => [`sketch]] )
+                      `gen-bom => true 
+                      `param-configs => [`groups]] )
 
-                        ; `gen-bom => true 

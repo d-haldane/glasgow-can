@@ -1,4 +1,4 @@
-(module amphenol-delta-d-pkg$38 (layer F.Cu)
+(module amphenol-delta-d-pkg$50 (layer F.Cu)
   (pad 1 thru_hole circle
     (at 1.42 5.48 0.0)
     (size 1.6 1.6)
